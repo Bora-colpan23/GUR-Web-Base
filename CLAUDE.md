@@ -83,7 +83,7 @@ src/app/yumusak.js (YUMUSAK_CSS): sayfa geçişi bulanıktan netleşme+ölçek+y
 
 ## Marka kimliği
 
-`docs/GUR-marka-kimligi.md`: küçük harfli `gur` wordmark (kase `u` + turuncu nokta; `GurLogo` bileşeni SVG), koyu metin `#2A140C`, renk değişkenleri `index.html` `:root` içinde (`--gur-*`). Yeni renk/logo eklerken bu dokümana uy.
+`docs/GUR-marka-kimligi.md`: logo DEĞİŞMEZ (büyük harfli `GUR`, G `#FFA500` · U `#FF6600` · R `#FF0000`, Poppins 900; `GurLogo` bileşeni); kimlik bu logo etrafında kuruludur. Koyu metin `#2A140C`, renk değişkenleri `index.html` `:root` içinde (`--gur-*`). Yeni renk eklerken bu dokümana uy.
 
 ## Görsel kurallar (bunlara uy)
 

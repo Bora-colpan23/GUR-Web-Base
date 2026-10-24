@@ -25,12 +25,15 @@ Bu doküman mevcut proje kurallarına bağlıdır: font Poppins, marka gradyanı
 
 ## 2. GÖRSEL KİMLİK SİSTEMİ
 
-### Logo konsepti ve imza detayı
-- **Wordmark:** küçük harfli, kalın, geometrik **`gur`** (Poppins ExtraBold tabanlı, özel çizimle). Uygulamadaki mevcut büyük harfli `GUR` pill logosu "uygulama ikonu" olarak kalır; wordmark küçük harfli yazılır.
-- **İmza detay: "dolu u".** `u` harfinin açık ağzı bir **kase/tabak** gibi çizilir ve içine **turuncu bir nokta** (lokma/konum iğnesi) oturur. Nokta tek başına konum işareti, kaydırma noktası ve "lokma" anlamına gelir.
-- **Hareket kahramanı:** Nokta `g`'den `r`'ye yay çizerek gelip `u`'nun içine düşer (kaydırma + tabağa konma). Logo açılışı 900 ms, yaylı (spring) iniş.
-- **Minimum boyut:** wordmark 56 px genişlik; altında yalnızca nokta + `u` kasesi (tek başına ikon).
-- **Koruma alanı:** `u` genişliği kadar boşluk her yönde.
+### Logo: mevcut GUR logosu değişmez
+Logo olduğu gibi kalır: **büyük harfli, Poppins Black (900), sıkı harf aralığı `GUR`**; üç harf üç tonda: **G `#FFA500` (altın) · U `#FF6600` (turuncu) · R `#FF0000` (kırmızı)**. Kimlik bu logonun etrafında kurulur.
+
+- **İmza detay: "ısınan gradyan".** G→U→R geçişi altından kırmızıya ısınır: bu sıcaklık sistemin tamamının kuralıdır. Marka gradyanı, logonun renk sırasından türer: `#FFA500 → #FF6600 → #FF0000` (soft sürüm: `#FF9A1F → #FF3D00`).
+- **Hareket kahramanı:** Açılışta harfler soldan sağa sırayla "ısınır" (G sarı-altın, ardından U, ardından R kızarır), son harfte yaylı bir pop.
+- **Kullanım:** Açık zeminde logo olduğu gibi; fotoğraf üzerinde beyaz hap (pill) içinde (mevcut `GurLogo pill`). Koyu zeminde beyaz hap şart, harfleri tek renge çevirme.
+- **Minimum boyut:** 22 px yükseklik (alt bar), 42 px (başlık), 60–80 px (giriş), 110 px (yalnızca açılış).
+- **Koruma alanı:** `U` harfi genişliği kadar boşluk her yönde. Logoyu eğme, gölgelendirme, outline ekleme yok.
+- **Tek başına ikon:** Uygulama ikonu = kırmızı-turuncu gradyan kare + beyaz `GUR`.
 
 ### Renk paleti (oranlar toplamı %100)
 
@@ -41,9 +44,9 @@ Bu doküman mevcut proje kurallarına bağlıdır: font Poppins, marka gradyanı
 | Közlenmiş | `#2A140C` | Metin, koyu zemin, alt bar | 15 |
 | Şeftali | `#FFD9C2` | Yumuşak yüzey, aura gradyanı | 8 |
 | Nane | `#9BE7C4` | Başarı, "Gastro Onaylı" vurgusu | 4 |
-| Limon | `#FFE45C` | Rozet, sponsorlu etiket, mikro vurgu | 3 |
+| Altın | `#FFA500` | Logo "G" tonu, rozet, sponsorlu etiket | 3 |
 
-- **Marka gradyanı:** `#FF9A1F → #FF3D00` (135°). Yalnızca ana buton, logo zemini ve banner'da.
+- **Marka gradyanı:** logonun G→U→R sırasından türer; `#FF9A1F → #FF3D00` (135°). Yalnızca ana buton, ikon zemini ve banner'da. Saf kırmızı `#FF0000` yalnızca logodaki `R` içindir, arayüzde kullanılmaz.
 - **Aura:** Şeftali ile Gür Turuncu'nun bulanık (blur 80–120 px) geçişi; hero ve boş durum ekranlarında zemin.
 - **Erişilebilirlik:** Beyaz yazı `#FF6600` üzerinde yalnızca büyük/kalın metinde (≈3:1). Küçük metin için Közlenmiş kullan.
 
@@ -66,7 +69,7 @@ Kural: başlıklar kısa ve sıkı, gövde bol boşlukla. Rakam büyütülerek (
 ### Simge seti (12 adet, line-art)
 Izgara 24 px · çizgi **2 px** · uçlar yuvarlak (round cap/join) · iç köşe yarıçapı 3 px · tek renk Közlenmiş, aktifte Gür Turuncu.
 
-1. Konum iğnesi (içinde nokta: imza detay)
+1. Konum iğnesi (içinde nokta)
 2. Kaydır (el + yay oku)
 3. Favori (kalp, tabak formlu)
 4. Masa ayırt (masa + saat)
@@ -80,24 +83,24 @@ Izgara 24 px · çizgi **2 px** · uçlar yuvarlak (round cap/join) · iç köş
 12. Paylaş (ok + kase)
 
 ### Marka deseni: "Sofra İzi"
-Kaydırma hareketinin bıraktığı **kavisli turuncu iz** ve iz üzerinde dizili nokta/kase öğeleri. Kullanım: foto üzerinde ince kurdele (3 px, yarı saydam), boş durumda büyük arka plan deseni (%8 opaklık), banner kenarlarında kırpılmış yay. Desen tek elemandır: yay + nokta; başka motif eklenmez.
+Kaydırma hareketinin bıraktığı **kavisli iz**; iz altından kırmızıya ısınır (logonun G→R geçişi) ve üzerinde dizili noktalar taşır. Kullanım: foto üzerinde ince kurdele (3 px, yarı saydam), boş durumda büyük arka plan deseni (%8 opaklık), banner kenarlarında kırpılmış yay. Desen tek elemandır: yay + nokta; başka motif eklenmez.
 
 ---
 
 ## 4. DİJİTAL VE FİZİKSEL UYGULAMA ALANLARI
 
 ### Baskılı / ambalaj
-- **Kartvizit:** Krem zemin, ön yüz yalnızca `gur` wordmark + nokta; arka yüz Közlenmiş zemin, iletişim Poppins 500. Köşeler 6 mm yuvarlak kesim.
+- **Kartvizit:** Krem zemin, ön yüz yalnızca `GUR` logosu (beyaz hap üzerinde); arka yüz Közlenmiş zemin, iletişim Poppins 500. Köşeler 6 mm yuvarlak kesim.
 - **Kurumsal dosya:** Gür Turuncu dış kapak, iç kapakta Sofra İzi deseni, yırtılabilir Şeftali not kâğıdı.
-- **Restoran masa standı / QR:** Közlenmiş zemin, tek büyük nokta, "Bizi GUR'da keşfet" + QR. Gastro Onaylı mekânlara Nane çerçeveli rozet sticker (cam vitrin için, 9 cm daire).
-- **Paket / kutu (şef kutusu, hediye):** Krem karton, dışta tek turuncu yay, içte Şeftali kâğıt.
+- **Restoran masa standı / QR:** Közlenmiş zemin, ortada beyaz hap içinde `GUR` logosu, "Bizi GUR'da keşfet" + QR. Gastro Onaylı mekânlara Nane çerçeveli rozet sticker (cam vitrin için, 9 cm daire).
+- **Paket / kutu (şef kutusu, hediye):** Krem karton, dışta `GUR` logosu ve tek yay, içte Şeftali kâğıt.
 
 ### Dijital UI
 - **Butonlar:** Hap (pill), yükseklik 52 px, ana = marka gradyanı + beyaz 700 yazı; ikincil = Krem zemin, 1.5 px Közlenmiş çizgi; üçüncül = metin + ok.
 - **Kartlar:** Köşe yarıçapı 24 px, gölge yok yerine 1 px `#E3DCD2` çizgi; foto üstünde alt gradyan Közlenmiş %0→%70.
 - **Grid:** 4 sütun mobil, 20 px kenar boşluğu, 8 px baz birim.
 - **Alt bar:** Beyaz yuvarlak pill, ortada GUR pill logosu (mevcut kural korunur).
-- **Mikro-etkileşimler:** Basınca %96 küçülme, bırakınca yaylanma; sağa kaydırma = turuncu iz çizer, kalp tabağa düşer; Gastro Onaylı rozeti ilk görünüşte hafifçe "pop" yapar; sayfa geçişi bulanıktan netleşme. Yalnızca transform/opacity/filter, hareket azaltılınca kapalı.
+- **Mikro-etkileşimler:** Basınca %96 küçülme, bırakınca yaylanma; sağa kaydırma = ısınan iz çizer, kalp tabağa düşer; Gastro Onaylı rozeti ilk görünüşte hafifçe "pop" yapar; sayfa geçişi bulanıktan netleşme. Yalnızca transform/opacity/filter, hareket azaltılınca kapalı.
 - **Görsel dil:** Sıcak, doğal ışıklı yemek ve masa fotoğrafı + line-art simgeler. Stok fotoğraf yerine mekânın kendi görseli; yedek: `picsum.photos`.
 
 ---
@@ -106,12 +109,12 @@ Kaydırma hareketinin bıraktığı **kavisli turuncu iz** ve iz üzerinde dizil
 
 **1 — Ambalaj mock-up**
 ```
-Minimalist packaging mock-up on a warm cream studio backdrop: a matte cardboard gift box in vivid orange (#FF6600) with a single thin curved arc and one round dot printed on the lid, lowercase bold geometric wordmark "gur" embossed in the corner, soft peach tissue paper peeking out, natural window light from the left, shallow depth of field, architectural plaster wall behind, ultra clean, editorial product photography, 50mm lens
+Minimalist packaging mock-up on a warm cream studio backdrop: a matte cardboard gift box in vivid orange (#FF6600) with a single thin curved arc printed on the lid, heavy uppercase geometric wordmark "GUR" in gold, orange and red letters embossed in the corner, soft peach tissue paper peeking out, natural window light from the left, shallow depth of field, architectural plaster wall behind, ultra clean, editorial product photography, 50mm lens
 ```
 
 **2 — Kırtasiye seti**
 ```
-Brand stationery flat lay on a pale cream textured table: rounded-corner business cards, a deep espresso-brown card with a small orange dot and bold lowercase geometric wordmark "gur", an orange folder with a faint swooping arc pattern, a peach notepad, a mint sticker sheet, warm studio light, long soft shadows, top-down view, minimal composition, high-end branding presentation
+Brand stationery flat lay on a pale cream textured table: rounded-corner business cards, a deep espresso-brown card with a white pill carrying a heavy uppercase wordmark "GUR" whose letters shift from gold to orange to red, an orange folder with a faint swooping arc pattern, a peach notepad, a mint sticker sheet, warm studio light, long soft shadows, top-down view, minimal composition, high-end branding presentation
 ```
 
 **3 — Dijital ekran sunumu**
@@ -121,4 +124,4 @@ Modern smartphone floating in front of a soft blurred aura gradient of peach and
 
 ---
 
-*Sonraki adım:* Bu renk ve tipografi sistemi `src/app` içindeki sabit renklerle (`GRAD = "#FF6600"` vb.) eşleştirilip tek bir `tokens` dosyasına taşınabilir; logo da `public/icons/icon.svg` içine uygulanabilir.
+*Sonraki adım:* Bu renk ve tipografi sistemi `src/app` içindeki sabit renklerle (`GRAD = "#FF6600"` vb.) eşleştirilip tek bir `tokens` dosyasına taşınabilir; logo değişmez, yalnızca renk ve desen sistemi uygulanır.

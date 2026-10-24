@@ -77,20 +77,11 @@ export const CATEGORIES = [
 // ═══════════════════════════════════════════════
 
 // Logo: beyaz hap şeklinde arka plan ile her yerde okunur
-export function GurLogo({ size = 48, pill = false, ink = "#2A140C" }) {
-  // Küçük harfli geometrik wordmark: "u" bir kase, içinde turuncu nokta (docs/GUR-marka-kimligi.md)
-  const logo = <span className="gur-logo" style={{ display: "inline-flex", lineHeight: 0 }}>
-    <svg viewBox="0 0 204 118" height={size * 0.95} width={size * 0.95 * 204 / 118} role="img" aria-label="gur" style={{ display: 'block' }}>
-      <defs><linearGradient id="gurDot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FF9A1F" /><stop offset="1" stopColor="#FF3D00" /></linearGradient></defs>
-      <g fill="none" stroke={ink} strokeWidth="17" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="36" cy="57" r="25" /><path d="M61 30V84C61 102 51 110 35 110C27 110 21 108 17 104" />
-        <path d="M88 30V62A26 26 0 0 0 140 62M140 30V90" />
-        <path d="M168 30V90M168 58C168 42 178 32 194 32" />
-      </g>
-      <circle cx="114" cy="53" r="11" fill="url(#gurDot)" />
-    </svg>
+export function GurLogo({ size = 48, pill = false }) {
+  const logo = <span className="gur-logo" style={{ fontSize: size, fontWeight: 900, fontFamily: "'Poppins', sans-serif", letterSpacing: -size/24, lineHeight: 1 }}>
+    <span style={{ color: "#FFA500" }}>G</span><span style={{ color: "#FF6600" }}>U</span><span style={{ color: "#FF0000" }}>R</span>
   </span>;
-  if (pill) return <div style={{ background: "#fff", borderRadius: size * 0.5, padding: `${size*0.14}px ${size*0.35}px`, display: "inline-flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 12px rgba(42,20,12,0.12)" }}>{logo}</div>;
+  if (pill) return <div style={{ background: "#fff", borderRadius: size * 0.5, padding: `${size*0.12}px ${size*0.35}px`, display: "inline-flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 12px rgba(0,0,0,0.12)" }}>{logo}</div>;
   return logo;
 }
 
