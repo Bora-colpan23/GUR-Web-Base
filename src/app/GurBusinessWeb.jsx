@@ -465,7 +465,7 @@ export function IsletmeSahiplenPage() {
             {adim === 1 && (
               <>
                 <div className="gw-bk-search" style={{ marginBottom: 14 }}>
-                  <Icon n="search" size={18} color="#1C1917" />
+                  <Icon n="search" size={18} color="#2A140C" />
                   <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="İşletme adı ya da adres yaz…" aria-label="İşletme ara" autoFocus />
                 </div>
                 {q.trim().length >= 2 && sonuclar.length === 0 && (

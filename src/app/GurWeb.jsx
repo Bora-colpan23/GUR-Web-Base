@@ -113,7 +113,7 @@ const CSS = `
   .gw-tgo-search input { flex:1; min-width:0; border:none !important; outline:none; box-shadow:none !important; font-size:15px; background:transparent; padding:10px 0; }
   .gw-tgo-districts { display:flex; gap:10px; overflow-x:auto; justify-content:center; padding:4px 2px 8px; scrollbar-width:none; }
   .gw-tgo-districts::-webkit-scrollbar { display:none; }
-  .gw-tgo-districts button { display:inline-flex; align-items:center; gap:6px; border:none; background:transparent; font-weight:600; font-size:14px; padding:8px 12px; border-radius:999px; cursor:pointer; white-space:nowrap; color:#1C1917; }
+  .gw-tgo-districts button { display:inline-flex; align-items:center; gap:6px; border:none; background:transparent; font-weight:600; font-size:14px; padding:8px 12px; border-radius:999px; cursor:pointer; white-space:nowrap; color:#2A140C; }
   .gw-tgo-districts button:hover { background:rgba(255,102,0,.1); }
   .gw-tgo-features { display:grid; grid-template-columns:1.15fr 1fr 1fr; border-top:1px solid rgba(0,0,0,.12); border-left:1px solid rgba(0,0,0,.12); }
   .gw-tgo-features > * { border-right:1px solid rgba(0,0,0,.12); border-bottom:1px solid rgba(0,0,0,.12); padding:34px 30px; }
@@ -126,15 +126,15 @@ const CSS = `
   .gw-tgo-facts { display:grid; grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); border-top:1px solid rgba(0,0,0,.12); border-left:1px solid rgba(0,0,0,.12); }
   .gw-tgo-facts > div { border-right:1px solid rgba(0,0,0,.12); border-bottom:1px solid rgba(0,0,0,.12); padding:16px 18px; display:flex; flex-direction:column; gap:4px; }
   .gw-tgo-facts span { font-size:12px; color:#8f8a85; font-weight:600; }
-  .gw-tgo-facts b { font-size:17px; font-weight:700; color:#1C1917; }
+  .gw-tgo-facts b { font-size:17px; font-weight:700; color:#2A140C; }
   /* Giriş/kayıt: pastel zemin + ortada çizgili kart */
   .gw-auth-page { min-height:100vh; min-height:100dvh; background:radial-gradient(60% 50% at 12% 0%, rgba(255,138,0,.20), transparent 70%), radial-gradient(55% 45% at 92% 6%, rgba(255,59,48,.12), transparent 70%), #fff; display:flex; flex-direction:column; }
   .gw-auth-top { display:flex; align-items:center; justify-content:space-between; padding:calc(18px + env(safe-area-inset-top)) 28px 0; max-width:1240px; width:100%; margin:0 auto; }
-  .gw-auth-back { border:1.5px solid #1C1917; background:#fff; border-radius:999px; padding:8px 18px; font-weight:700; font-size:14px; cursor:pointer; width:84px; white-space:nowrap; }
+  .gw-auth-back { border:1.5px solid #2A140C; background:#fff; border-radius:999px; padding:8px 18px; font-weight:700; font-size:14px; cursor:pointer; width:84px; white-space:nowrap; }
   .gw-auth-body { flex:1; width:100%; max-width:520px; margin:0 auto; padding:36px 20px calc(48px + env(safe-area-inset-bottom)); text-align:center; }
   .gw-auth-card { background:#fff; border:1px solid rgba(0,0,0,.1); border-radius:28px; padding:30px 28px; text-align:left; box-shadow:0 12px 40px rgba(0,0,0,.05); }
-  .gw-afield { display:flex; flex-direction:column; gap:7px; font-size:14px; font-weight:700; color:#1C1917; margin-bottom:18px; }
-  .gw-afield input, .gw-afield select { border:1.5px solid rgba(0,0,0,.14) !important; border-radius:14px; padding:14px 16px; font-size:15px; font-weight:400; background:#fff; color:#1C1917; width:100%; box-shadow:none; }
+  .gw-afield { display:flex; flex-direction:column; gap:7px; font-size:14px; font-weight:700; color:#2A140C; margin-bottom:18px; }
+  .gw-afield input, .gw-afield select { border:1.5px solid rgba(0,0,0,.14) !important; border-radius:14px; padding:14px 16px; font-size:15px; font-weight:400; background:#fff; color:#2A140C; width:100%; box-shadow:none; }
   .gw-afield input:focus, .gw-afield select:focus { border-color:#FF6600 !important; box-shadow:0 0 0 4px rgba(255,102,0,.18) !important; }
   .gw-acheck { display:flex; align-items:center; gap:12px; margin:4px 0 22px; font-size:14px; color:#57534E; cursor:pointer; }
   .gw-acheck input { width:22px; height:22px; accent-color:#FF6600; flex-shrink:0; }
@@ -171,7 +171,7 @@ const CSS = `
   .gw-modal-card { background:#fff; width:100%; max-width:480px; border-radius:28px 28px 0 0; padding:26px 24px calc(30px + env(safe-area-inset-bottom)); }
   @media (min-width:700px) { .gw-modal { align-items:center; } .gw-modal-card { border-radius:28px; padding-bottom:30px; } }
   .gw-badge { display:inline-flex; align-items:center; gap:5px; padding:4px 11px; border-radius:999px; font-size:12px; font-weight:700; }
-  .gw-badge.dark { background:#1C1917; color:#FFD27A; } .gw-badge.soft { background:rgba(255,102,0,.10); color:#A84D09; }
+  .gw-badge.dark { background:#2A140C; color:#FFD27A; } .gw-badge.soft { background:rgba(255,102,0,.10); color:#A84D09; }
   .gw-heartbtn { position:absolute; top:8px; right:8px; width:44px; height:44px; border-radius:50%; border:none; background:rgba(255,255,255,.92); cursor:pointer; display:flex; align-items:center; justify-content:center; }
   .gw-konumcipi { display:inline-flex; align-items:center; gap:7px; padding:9px 16px; border-radius:999px; background:#fff; border:1px solid rgba(0,0,0,.12); font-weight:700; font-size:14px; min-height:44px; }
   .gw-konumcipi span { color:#B4530A; font-weight:700; margin-left:4px; }
@@ -192,7 +192,7 @@ const CSS = `
   .gw-deckbtns { display:flex; align-items:center; justify-content:center; gap:18px; padding:16px 0 4px; }
   .gw-yuvarlak { width:56px; height:56px; border-radius:50%; background:#fff; border:1px solid rgba(45,36,25,.1); box-shadow:0 6px 20px rgba(0,0,0,.12); cursor:pointer; display:flex; align-items:center; justify-content:center; }
   .gw-yuvarlak.buyuk { width:68px; height:68px; }
-  .gw-toast { position:absolute; left:50%; top:78px; transform:translateX(-50%); margin:0; background:#1C1917; color:#fff; border-radius:999px; padding:0 18px; font-size:14px; font-weight:600; line-height:38px; white-space:nowrap; pointer-events:none; opacity:0; transition:opacity .2s; }
+  .gw-toast { position:absolute; left:50%; top:78px; transform:translateX(-50%); margin:0; background:#2A140C; color:#fff; border-radius:999px; padding:0 18px; font-size:14px; font-weight:600; line-height:38px; white-space:nowrap; pointer-events:none; opacity:0; transition:opacity .2s; }
   .gw-toast:not(:empty) { opacity:1; }
   @media (max-width:700px) {
     .gw-deckpage { height:calc(100vh - 92px - env(safe-area-inset-bottom)); height:calc(100dvh - 92px - env(safe-area-inset-bottom)); padding:calc(14px + env(safe-area-inset-top)) 12px 6px; }
@@ -200,7 +200,7 @@ const CSS = `
   }
 
   /* ───────── Doyurucu: aktif restoranlar + harita (Booking tarzı) ───────── */
-  .gw-dbar { height:56px; display:flex; align-items:center; gap:18px; padding:0 20px; background:#1C1917; color:#fff; position:sticky; top:0; z-index:40; }
+  .gw-dbar { height:56px; display:flex; align-items:center; gap:18px; padding:0 20px; background:#2A140C; color:#fff; position:sticky; top:0; z-index:40; }
   .gw-dlink { display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; color:rgba(255,255,255,.75); white-space:nowrap; }
   .gw-dlink:hover { background:rgba(255,255,255,.1); color:#fff; } .gw-dlink.active { background:rgba(255,102,0,.25); color:#FFB27A; }
   .gw-bk { height:100vh; height:100dvh; display:flex; flex-direction:column; background:#f5f5f7; }
@@ -220,13 +220,13 @@ const CSS = `
   .gw-bk-info { flex:1; min-width:0; display:flex; flex-direction:column; gap:4px; }
   .gw-bk-puan { flex-shrink:0; min-width:38px; height:34px; padding:0 8px; display:inline-flex; align-items:center; justify-content:center; background:#FF6600; color:#fff; font-weight:800; font-size:15px; border-radius:10px 10px 10px 2px; }
   .gw-durum { font-size:12px; font-weight:700; padding:3px 10px; border-radius:999px; background:#F6F3EE; color:#6F6459; } .gw-durum.ok { background:rgba(19,179,100,.12); color:#0A7C46; }
-  .gw-bk-btn { min-height:36px; padding:0 14px; border-radius:999px; border:1.5px solid #1C1917; background:#fff; font-weight:700; font-size:13px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-family:inherit; }
+  .gw-bk-btn { min-height:36px; padding:0 14px; border-radius:999px; border:1.5px solid #2A140C; background:#fff; font-weight:700; font-size:13px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-family:inherit; }
   .gw-bk-btn.on { background:#FF6600; border-color:#FF6600; color:#fff; }
   .gw-bk-mapwrap { position:relative; min-height:300px; } .gw-bk-harita { position:absolute; inset:0; z-index:1; }
   .gw-bk-bos { position:absolute; z-index:5; left:50%; top:50%; transform:translate(-50%,-50%); background:#fff; border-radius:18px; padding:18px 22px; max-width:320px; box-shadow:0 10px 36px rgba(0,0,0,.2); display:flex; flex-direction:column; gap:6px; font-size:14px; text-align:center; pointer-events:none; }
   .gw-pinwrap { background:none; border:none; }
   .gw-pin { display:inline-flex; align-items:center; justify-content:center; min-width:42px; height:26px; padding:0 8px; border-radius:13px 13px 13px 3px; background:#FF6600; color:#fff; font:800 13px/1 'Outfit', system-ui, sans-serif; border:2px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,.4); transition:transform .25s var(--spring), background .2s; }
-  .gw-pin.yak { border-style:dashed; background:#E07A2E; } .gw-pin.on { background:#1C1917; transform:scale(1.25); }
+  .gw-pin.yak { border-style:dashed; background:#E07A2E; } .gw-pin.on { background:#2A140C; transform:scale(1.25); }
   .leaflet-popup-content { font-family:'Outfit', system-ui, sans-serif; font-size:13px; margin:12px 14px; } .leaflet-popup-content p { margin:3px 0; } .leaflet-popup-content a { color:#B4530A; font-weight:700; }
   @media (max-width:900px) {
     .gw-bk-body { grid-template-columns:1fr; }
@@ -262,7 +262,7 @@ const CSS = `
   /* Kaydır: damgalar G-U-R'un kendi renkleri */
   .gw-damga.sag { border-color:#FF6600; color:#fff; background:rgba(255,102,0,.85); }
   .gw-damga.sol { border-color:#FF0000; color:#fff; background:rgba(255,0,0,.85); }
-  .gw-damga.yukari { border-color:#FFA500; color:#1C1917; background:rgba(255,165,0,.92); }
+  .gw-damga.yukari { border-color:#FFA500; color:#2A140C; background:rgba(255,165,0,.92); }
   .gw-yuvarlak { border-width:2px; }
   /* Alt bar ve bantlar */
   .gw-bottom::before { content:''; position:absolute; left:26px; right:26px; top:0; height:3px; border-radius:0 0 3px 3px; background:var(--tri); }
@@ -371,7 +371,7 @@ const CSS = `
   .gw-stepper { display:flex; justify-content:center; gap:10px; list-style:none; padding:0; margin:0 0 20px; flex-wrap:wrap; }
   .gw-stepper li { display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:#6F6459; padding:6px 14px 6px 6px; border-radius:999px; background:#fff; border:1px solid #E3DCD2; }
   .gw-stepper li span { width:26px; height:26px; border-radius:50%; background:#EFE9E1; display:inline-flex; align-items:center; justify-content:center; font-size:13px; font-weight:800; }
-  .gw-stepper li.on { color:#1C1917; border-color:#FF6600; } .gw-stepper li.on span { background:linear-gradient(135deg,#FF8F00,#FF6600 55%,#F51C00); color:#fff; } .gw-stepper li.done span { background:#0A7C46; color:#fff; }
+  .gw-stepper li.on { color:#2A140C; border-color:#FF6600; } .gw-stepper li.on span { background:linear-gradient(135deg,#FF8F00,#FF6600 55%,#F51C00); color:#fff; } .gw-stepper li.done span { background:#0A7C46; color:#fff; }
   .gw-sonuc { display:flex; align-items:center; gap:14px; width:100%; padding:10px 6px; background:none; border:none; border-bottom:1px solid #EFE9E1; font-family:inherit; font-size:15px; cursor:pointer; border-radius:12px; }
   .gw-sonuc:hover:not(:disabled) { background:rgba(255,165,0,.1); } .gw-sonuc:disabled { cursor:not-allowed; }
   .gw-secili { display:flex; align-items:center; gap:12px; background:#FFF8F0; border:1px solid rgba(255,102,0,.25); border-radius:16px; padding:10px 12px; margin-bottom:18px; }
@@ -408,10 +408,10 @@ const CSS = `
   .gw-mah-kap { max-width:980px; margin:0 auto; }
   .gw-mah-baslik { margin:0 0 10px; font-size:12.5px; font-weight:700; letter-spacing:.04em; color:#6F6459; text-align:center; }
   .gw-mah { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }
-  .gw-mah-chip { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 14px 0 8px; border-radius:999px; background:#fff; border:1.5px solid rgba(0,0,0,.12); font-family:inherit; font-size:14.5px; font-weight:600; color:#1C1917; cursor:pointer; white-space:nowrap; transition:transform .3s var(--spring), border-color .2s, background-color .2s, box-shadow .2s; }
+  .gw-mah-chip { display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:0 14px 0 8px; border-radius:999px; background:#fff; border:1.5px solid rgba(0,0,0,.12); font-family:inherit; font-size:14.5px; font-weight:600; color:#2A140C; cursor:pointer; white-space:nowrap; transition:transform .3s var(--spring), border-color .2s, background-color .2s, box-shadow .2s; }
   .gw-mah-chip em { font-style:normal; font-size:12.5px; font-weight:700; color:#6F6459; background:#F6F3EE; border-radius:999px; padding:2px 9px; }
   .gw-mah-sira { width:26px; height:26px; border-radius:50%; background:#F1ECE5; color:#4A443E; font-size:12.5px; font-weight:800; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; }
-  .gw-mah-sira.s1 { background:#FFA500; color:#1C1917; } .gw-mah-sira.s2 { background:#FF6600; color:#fff; } .gw-mah-sira.s3 { background:#FF0000; color:#fff; }
+  .gw-mah-sira.s1 { background:#FFA500; color:#2A140C; } .gw-mah-sira.s2 { background:#FF6600; color:#fff; } .gw-mah-sira.s3 { background:#FF0000; color:#fff; }
   .gw-mah-chip.on { background:linear-gradient(135deg, #FF8F00, #FF6600 55%, #F51C00); border-color:transparent; color:#fff; } .gw-mah-chip.on em { background:rgba(255,255,255,.25); color:#fff; }
   .gw-mah-chip.ilce { min-height:50px; font-size:16px; font-weight:700; padding-right:16px; }
   .gw-mah-chip.ilce.sec { border-color:#FF6600; background:rgba(255,165,0,.14); box-shadow:0 0 0 3px rgba(255,165,0,.22); }
@@ -437,7 +437,7 @@ const CSS = `
   .gw-serit-in:active { cursor:grabbing; }
   .gw-serit-in > button { flex-shrink:0; scroll-snap-align:start; user-select:none; }
   .gw-serit-in > :first-child { margin-left:auto; } .gw-serit-in > :last-child { margin-right:auto; } /* sığıyorsa ortalı, taşıyorsa baştan */
-  .gw-serit-ok { position:absolute; top:50%; transform:translateY(-58%); z-index:3; width:38px; height:38px; border-radius:50%; border:1px solid rgba(0,0,0,.12); background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.14); font-size:22px; line-height:1; cursor:pointer; color:#1C1917; display:flex; align-items:center; justify-content:center; padding:0 0 3px; }
+  .gw-serit-ok { position:absolute; top:50%; transform:translateY(-58%); z-index:3; width:38px; height:38px; border-radius:50%; border:1px solid rgba(0,0,0,.12); background:#fff; box-shadow:0 4px 14px rgba(0,0,0,.14); font-size:22px; line-height:1; cursor:pointer; color:#2A140C; display:flex; align-items:center; justify-content:center; padding:0 0 3px; }
   .gw-serit-ok.sol { left:0; } .gw-serit-ok.sag { right:0; }
   .gw-serit-ok:hover { background:rgba(255,102,0,.1); border-color:#FF6600; color:#B4530A; }
 
@@ -446,7 +446,7 @@ const CSS = `
   .gw-dsheet-ov { position:fixed; inset:0; z-index:850; display:flex; align-items:flex-end; justify-content:center; }
   .gw-dsheet { position:relative; width:100%; max-width:620px; max-height:90vh; max-height:90dvh; background:#fff; border-radius:28px 28px 0 0; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 -10px 50px rgba(0,0,0,.25); animation:sheetUp .5s var(--spring) both; transition:transform .3s var(--ease-out); }
   .gw-dsheet-tut { padding:10px 0 6px; cursor:grab; touch-action:none; display:flex; justify-content:center; flex-shrink:0; } .gw-dsheet-tut span { width:44px; height:5px; border-radius:3px; background:#D6CFC7; }
-  .gw-dsheet-x { position:absolute; top:8px; right:12px; width:44px; height:44px; border-radius:50%; border:none; background:#F6F3EE; font-size:16px; color:#1C1917; cursor:pointer; z-index:3; }
+  .gw-dsheet-x { position:absolute; top:8px; right:12px; width:44px; height:44px; border-radius:50%; border:none; background:#F6F3EE; font-size:16px; color:#2A140C; cursor:pointer; z-index:3; }
   .gw-dsheet-in { overflow-y:auto; padding:0 22px 8px; flex:1; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; }
   .gw-dsheet-foto { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; margin:0 -22px; padding:0 22px; scrollbar-width:none; } .gw-dsheet-foto::-webkit-scrollbar { display:none; }
   .gw-dsheet-foto > div { flex:0 0 82%; height:210px; border-radius:20px; overflow:hidden; scroll-snap-align:center; background:#e8e0d8; position:relative; }
@@ -462,7 +462,7 @@ const CSS = `
   .gw-gal .gw-dsheet-foto { margin:0; cursor:grab; user-select:none; -webkit-user-select:none; }
   .gw-gal .gw-dsheet-foto.drag { scroll-snap-type:none; cursor:grabbing; }
   .gw-gal .gw-dsheet-foto img { pointer-events:none; -webkit-user-drag:none; }
-  .gw-gal-ok { position:absolute; top:105px; transform:translateY(-50%); z-index:3; width:40px; height:40px; border-radius:50%; border:1px solid rgba(0,0,0,.1); background:rgba(255,255,255,.95); box-shadow:0 4px 14px rgba(0,0,0,.2); font-size:24px; line-height:1; padding:0 0 3px; cursor:pointer; color:#1C1917; display:flex; align-items:center; justify-content:center; }
+  .gw-gal-ok { position:absolute; top:105px; transform:translateY(-50%); z-index:3; width:40px; height:40px; border-radius:50%; border:1px solid rgba(0,0,0,.1); background:rgba(255,255,255,.95); box-shadow:0 4px 14px rgba(0,0,0,.2); font-size:24px; line-height:1; padding:0 0 3px; cursor:pointer; color:#2A140C; display:flex; align-items:center; justify-content:center; }
   .gw-gal-ok.sol { left:30px; } .gw-gal-ok.sag { right:30px; }
   .gw-gal-ok:hover { background:#fff; color:#B4530A; }
   .gw-gal-nokta { display:flex; align-items:center; justify-content:center; gap:2px; margin-top:6px; }
@@ -689,7 +689,7 @@ export function PageHero({ light, bold, sub, children, compact }) {
   );
 }
 
-export const tgoPill = (filled, extra) => ({ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '13px 26px', borderRadius: 999, fontWeight: 700, fontSize: 15, border: filled ? '1.5px solid transparent' : '1.5px solid #1C1917', background: filled ? GRAD : '#fff', color: filled ? '#fff' : '#1C1917', cursor: 'pointer', fontFamily: F, whiteSpace: 'nowrap', ...extra });
+export const tgoPill = (filled, extra) => ({ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8, padding: '13px 26px', borderRadius: 999, fontWeight: 700, fontSize: 15, border: filled ? '1.5px solid transparent' : '1.5px solid #2A140C', background: filled ? GRAD : '#fff', color: filled ? '#fff' : '#2A140C', cursor: 'pointer', fontFamily: F, whiteSpace: 'nowrap', ...extra });
 
 export function RestaurantCard({ r, i = 0 }) {
   const { depo, isFav, toggleFav } = useApp();
@@ -798,7 +798,7 @@ function HomePageWeb() {
   // 1 yorumlu 5 puanlı mekan vitrine çıkmasın: en az 200 değerlendirmesi olanlar arasından en yüksek puanlılar.
   const featured = useMemo(() => [...restaurants].filter((r) => (r.ratingCount || 0) >= 200).sort((a, b) => b.rating - a.rating || b.ratingCount - a.ratingCount).slice(0, 6), [restaurants]);
   const ilceler = useIlceler(restaurants);
-  const pill = (filled) => ({ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '11px 22px', borderRadius: 999, fontWeight: 700, fontSize: 14, border: filled ? 'none' : '1.5px solid #1C1917', background: filled ? GRAD : '#fff', color: filled ? '#fff' : '#1C1917', cursor: 'pointer', fontFamily: F, whiteSpace: 'nowrap' });
+  const pill = (filled) => ({ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '11px 22px', borderRadius: 999, fontWeight: 700, fontSize: 14, border: filled ? 'none' : '1.5px solid #2A140C', background: filled ? GRAD : '#fff', color: filled ? '#fff' : '#2A140C', cursor: 'pointer', fontFamily: F, whiteSpace: 'nowrap' });
   return (
     <div style={{ background: '#fff' }}>
       <header className="gw-homehead" style={{ position: 'sticky', top: 0, zIndex: 50, background: 'rgba(255,255,255,.88)', backdropFilter: 'saturate(180%) blur(20px)', WebkitBackdropFilter: 'saturate(180%) blur(20px)' }}>
@@ -816,7 +816,7 @@ function HomePageWeb() {
         <div className="gw-wrap" style={{ textAlign: 'center' }}>
           <h1 className="gw-tgo-h1"><span style={{ color: '#8f8a85', fontWeight: 400 }}>İstanbul'un Lezzetleri</span> <span className="gw-tri-text">Bir Kaydırma Uzağında!</span></h1>
           <form className="gw-tgo-search" onSubmit={(e) => { e.preventDefault(); go(q.trim()); }}>
-            <Icon n="search" size={20} color="#1C1917" />
+            <Icon n="search" size={20} color="#2A140C" />
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Restoran, mutfak veya semt ara" aria-label="Ara" />
             <Link to="/kesfet" className="gw-hide-sm" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontWeight: 700, fontSize: 13, whiteSpace: 'nowrap', padding: '0 6px' }}><Icon n="pin" size={16} />Tüm İstanbul</Link>
             <button type="submit" aria-label="Ara" style={{ width: 44, height: 44, borderRadius: '50%', border: 'none', background: GRAD, color: '#fff', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -873,7 +873,7 @@ function HomePageWeb() {
             <p>GUR'a katıl, menünü ve fotoğraflarını yayınla, İstanbul'daki yemek severlere ulaş.</p>
             <Link to="/doyurucu" style={{ ...pill(false), border: 'none', color: '#FF6600', alignSelf: 'flex-start' }}>Restoranımı Ekle</Link>
           </div>
-          <div className="gw-tgo-band" style={{ background: '#1C1917', color: '#fff' }}>
+          <div className="gw-tgo-band" style={{ background: '#2A140C', color: '#fff' }}>
             <h2>Ana Ekranına Ekle</h2>
             <p>Telefonunda Safari'de Paylaş ▸ "Ana Ekrana Ekle" de; GUR uygulama gibi tam ekran açılır.</p>
             <Link to="/kesfet" style={{ ...pill(false), border: 'none', alignSelf: 'flex-start' }}>Hemen Dene</Link>
@@ -1099,7 +1099,7 @@ function KonumCipi() {
   const metin = depo.konum ? (depo.konum.ilce || 'Konumum') : 'Konum kapalı';
   return (
     <Link to="/konum/degistir" className="gw-konumcipi" aria-label={`Konum: ${metin}. Değiştirmek için dokun`}>
-      <Icon n="pin" size={15} color="#1C1917" />{metin}<span>Değiştir</span>
+      <Icon n="pin" size={15} color="#2A140C" />{metin}<span>Değiştir</span>
     </Link>
   );
 }
@@ -1128,7 +1128,7 @@ function ExplorePageWeb() {
     <div>
       <PageHero light="Canın Ne İstiyor?" bold="Hemen Keşfet!" compact>
         <div className="gw-tgo-search">
-          <Icon n="search" size={20} color="#1C1917" />
+          <Icon n="search" size={20} color="#2A140C" />
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Restoran, mutfak ya da semt" aria-label="Restoran ara" />
           {q
             ? <button onClick={() => setQ('')} aria-label="Aramayı temizle" style={{ width: 44, height: 44, borderRadius: '50%', border: 'none', background: '#f1efec', cursor: 'pointer', fontSize: 16 }}>✕</button>
@@ -1136,7 +1136,7 @@ function ExplorePageWeb() {
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 6 }}>
           <KonumCipi />
-          <Link to="/kesfet/harita" className="gw-konumcipi"><Icon n="pin" size={15} color="#1C1917" />Harita görünümü</Link>
+          <Link to="/kesfet/harita" className="gw-konumcipi"><Icon n="pin" size={15} color="#2A140C" />Harita görünümü</Link>
         </div>
         {ilceler.length > 0 && (
           <BolgeSecici ilceler={ilceler} aktif={q} ilceUygula onSec={(m) => setQ(q === m ? '' : m)} />
@@ -1238,7 +1238,7 @@ function DeckKart({ r, derinlik, ust, exitDir, onKarar, onDetay }) {
       <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, padding: '22px 22px 24px', color: '#fff', pointerEvents: 'none' }}>
         <h2 style={{ margin: '0 0 8px', fontSize: 26, color: '#fff', textShadow: '0 2px 12px rgba(0,0,0,.5)' }}>{r.name}</h2>
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap', fontSize: 13, marginBottom: 8 }}>
-          <span style={{ background: '#fff', color: '#1C1917', borderRadius: 10, padding: '3px 10px', fontWeight: 700, display: 'inline-flex', gap: 4, alignItems: 'center' }}><Icon n="star" size={12} color="#F59E0B" />{r.rating}</span>
+          <span style={{ background: '#fff', color: '#2A140C', borderRadius: 10, padding: '3px 10px', fontWeight: 700, display: 'inline-flex', gap: 4, alignItems: 'center' }}><Icon n="star" size={12} color="#F59E0B" />{r.rating}</span>
           {mesafeMetni(r) && <span>{mesafeMetni(r)}</span>}
           {r.price && <span>· {r.price}</span>}
           <span style={{ color: '#FFB454', fontWeight: 700 }}>· {r.cat}</span>
@@ -1552,7 +1552,7 @@ function DetailPageWeb() {
           )}
 
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', margin: '24px 0 10px' }}>
-            <button onClick={() => toggleFav(r)} aria-pressed={fav} style={tgoPill(!fav, { flex: '1 1 180px', background: fav ? '#f1efec' : GRAD, color: fav ? '#1C1917' : '#fff', border: 'none' })}>{fav ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}</button>
+            <button onClick={() => toggleFav(r)} aria-pressed={fav} style={tgoPill(!fav, { flex: '1 1 180px', background: fav ? '#f1efec' : GRAD, color: fav ? '#2A140C' : '#fff', border: 'none' })}>{fav ? 'Favorilerden Çıkar' : 'Favorilere Ekle'}</button>
             <button onClick={yolTarifi} style={tgoPill(false)}>Yol tarifi</button>
             <button onClick={masaAyirt} disabled={!r.claimed} style={tgoPill(!!r.claimed, r.claimed ? undefined : { background: '#f1efec', border: 'none', color: '#6F6459', cursor: 'not-allowed' })}>
               {r.claimed ? 'Masa ayırt' : 'Masa ayırtma kapalı'}
@@ -1838,7 +1838,7 @@ export function RestoranHaritaPage() {
       {!musteri && <DoyurucuBar />}
       <div className="gw-bk-tools">
         <div className="gw-bk-search">
-          <Icon n="search" size={18} color="#1C1917" />
+          <Icon n="search" size={18} color="#2A140C" />
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Restoran, mutfak ya da mahalle ara" aria-label="Restoran ara" />
         </div>
         <select value={kategori} onChange={(e) => setKategori(e.target.value)} aria-label="Kategori">
@@ -1873,7 +1873,7 @@ export function RestoranHaritaPage() {
                 <Img src={r.imgs?.[0]} style={{ width: 128, minHeight: 128, borderRadius: 14, flexShrink: 0 }} bg="#e8e0d8" />
                 <div className="gw-bk-info">
                   <div style={{ display: 'flex', gap: 10, justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <Link to={`/restoran/${r.id}`} style={{ fontWeight: 700, fontSize: 17, color: '#1C1917' }}>{r.name}</Link>
+                    <Link to={`/restoran/${r.id}`} style={{ fontWeight: 700, fontSize: 17, color: '#2A140C' }}>{r.name}</Link>
                     <span className="gw-bk-puan" title={`${r.rating} / 5`}>{Number(r.rating).toFixed(1)}</span>
                   </div>
                   <div style={{ fontSize: 13, color: '#6F6459' }}>{r.cat}{r.tags?.[1] ? ` · ${r.tags[1]}` : ''}{r.ratingCount ? ` · ${r.ratingCount.toLocaleString('tr-TR')} değerlendirme` : ''}</div>

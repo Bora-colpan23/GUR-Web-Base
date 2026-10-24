@@ -118,7 +118,7 @@ export const GELIR_CSS = `
   .gy-kart { background:#fff; border:1px solid rgba(45,36,25,.10); border-radius:20px; padding:16px 18px; margin-bottom:10px; box-shadow:0 1px 2px rgba(45,36,25,.04), 0 2px 6px rgba(45,36,25,.04); }
   .gy-kart p { margin:8px 0 0; color:#4A443E; line-height:1.6; } .gy-kart h3 { margin:12px 0 0; font-size:17px; }
   .gy-kart.gurme { border-color:rgba(255,102,0,.35); background:linear-gradient(180deg, rgba(255,165,0,.07), #fff 60%); }
-  .gy-ust { display:flex; align-items:center; gap:12px; font-size:13px; color:#6F6459; } .gy-ust b { display:block; color:#1C1917; font-size:15px; } .gy-ust small { display:block; font-size:12.5px; }
+  .gy-ust { display:flex; align-items:center; gap:12px; font-size:13px; color:#6F6459; } .gy-ust b { display:block; color:#2A140C; font-size:15px; } .gy-ust small { display:block; font-size:12.5px; }
   .gy-yildiz { color:#FF6600; letter-spacing:1px; }
   .gy-avatar { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,#FFA500,#FF6600 55%,#FF0000); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; flex-shrink:0; }
   .gy-puan { font-family:'Poppins',sans-serif; font-weight:800; font-size:26px; color:#B4530A; line-height:1; } .gy-puan small { font-size:12px; color:#6F6459; margin-left:2px; font-family:inherit; }

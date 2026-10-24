@@ -81,6 +81,10 @@ src/app/yumusak.js (YUMUSAK_CSS): sayfa geçişi bulanıktan netleşme+ölçek+y
 
 `scripts/places-sync.mjs`: `npm run places:kesif` (AYDA 1: yeni mekân kimlikleri, Text Search yalnızca kimlik = ücretsiz sınıf), `npm run places:guncelle` (HAFTADA 1: yalnızca yeni/7 günden eski kayıtlar için Place Details; aylık sınır 950, PLACES_AYLIK_DETAY_SINIRI), `npm run places:durum`, `--kuru` ağa çıkmaz. Anahtar .env GOOGLE_PLACES_API_KEY (koda yazma). Çıktı src/data/places-cache.json; src/data/placesBirlestir.js siteye ve admin'e birleştirir (eşleşen kayıt güncellenir, yeniler eklenir, kalıcı kapalı çıkar). Google fotoğrafı kullanılmaz (her gösterim ücretli). Saklama şartlarını Google'dan kontrol et.
 
+## Marka kimliği
+
+`docs/GUR-marka-kimligi.md`: küçük harfli `gur` wordmark (kase `u` + turuncu nokta; `GurLogo` bileşeni SVG), koyu metin `#2A140C`, renk değişkenleri `index.html` `:root` içinde (`--gur-*`). Yeni renk/logo eklerken bu dokümana uy.
+
 ## Görsel kurallar (bunlara uy)
 
 - **Görseller**: `picsum.photos` kullan (Unsplash artifact'ta güvenilmez). URL formatı: `https://picsum.photos/seed/AD/600/400`.

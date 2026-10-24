@@ -54,20 +54,20 @@ export const MOBIL_CSS = `
     .gw-auth-card { background:transparent !important; border:none !important; box-shadow:none !important; padding:0 !important; }
     .gw-auth-body { text-align:left; }
     .gw .gw-auth-body .gw-tgo-h1 { text-align:left; font-family:'Poppins',sans-serif !important; font-size:26px !important; letter-spacing:-.03em; }
-    .gw .gw-auth-body .gw-tgo-h1 span { color:#1C1917 !important; -webkit-text-fill-color:#1C1917 !important; background:none !important; font-weight:800 !important; }
+    .gw .gw-auth-body .gw-tgo-h1 span { color:#2A140C !important; -webkit-text-fill-color:#2A140C !important; background:none !important; font-weight:800 !important; }
     .gw .gw-auth-body > p { margin-left:0 !important; text-align:left !important; }
     .gw .gw-afield input, .gw .gw-afield select { border:1px solid #E3DCD2 !important; border-radius:14px !important; min-height:48px; }
   }
 
   /* ───── Ekranlar ───── */
-  .gm { background:#FDFBF7; color:#1C1917; min-height:100vh; min-height:100dvh; }
-  .gw .gm .gm-h { font-family:'Poppins',sans-serif !important; font-weight:800 !important; letter-spacing:-.03em; color:#1C1917; margin:0; }
+  .gm { background:#FDFBF7; color:#2A140C; min-height:100vh; min-height:100dvh; }
+  .gw .gm .gm-h { font-family:'Poppins',sans-serif !important; font-weight:800 !important; letter-spacing:-.03em; color:#2A140C; margin:0; }
   .gm-top { display:flex; align-items:center; justify-content:space-between; padding:calc(8px + env(safe-area-inset-top)) 16px 2px; }
-  .gm-konum { display:flex; align-items:center; gap:8px; min-height:44px; padding-right:8px; color:#1C1917; }
+  .gm-konum { display:flex; align-items:center; gap:8px; min-height:44px; padding-right:8px; color:#2A140C; }
   .gm-konum i { width:32px; height:32px; border-radius:50%; background:rgba(255,102,0,.08); display:flex; align-items:center; justify-content:center; }
   .gm-konum small { display:block; font-size:11px; color:#6F6459; line-height:1.2; } .gm-konum b { font-size:13.5px; font-weight:700; line-height:1.2; }
   .gm-search { margin:10px 16px 0; display:flex; align-items:center; gap:10px; background:#fff; border:1px solid #E3DCD2; border-radius:999px; padding:0 16px; min-height:48px; }
-  .gm-search input { flex:1; border:none !important; outline:none !important; box-shadow:none !important; font-size:16px; background:transparent; min-width:0; color:#1C1917; padding:10px 0; }
+  .gm-search input { flex:1; border:none !important; outline:none !important; box-shadow:none !important; font-size:16px; background:transparent; min-width:0; color:#2A140C; padding:10px 0; }
   .gm-chips { display:flex; gap:8px; overflow-x:auto; padding:14px 16px 6px; scrollbar-width:none; -webkit-overflow-scrolling:touch; }
   .gm-chips::-webkit-scrollbar { display:none; }
   .gm-chip { flex-shrink:0; min-height:40px; padding:0 15px; border-radius:999px; border:1px solid #E3DCD2; background:#fff; font-family:inherit; font-size:13px; font-weight:600; color:#4A443E; white-space:nowrap; display:inline-flex; align-items:center; gap:6px; cursor:pointer; }
@@ -85,7 +85,7 @@ export const MOBIL_CSS = `
   /* Hap düğmeler: tam yuvarlak, kalın yazı, turuncu gölge; devre dışı hap soluklaşmaz, nötr tona geçer */
   .gm-hap { width:100%; min-height:50px; padding:0 30px; border-radius:999px; border:1px solid transparent; font-family:inherit; font-size:16px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:9px; cursor:pointer; letter-spacing:-.1px; }
   .gm-hap.filled { background:linear-gradient(135deg, #FF7A1A, #FF6600 50%, #F04E00); color:#fff; box-shadow:0 1px 2px rgba(190,70,0,.10), 0 4px 10px rgba(190,70,0,.16), 0 10px 24px rgba(190,70,0,.18); }
-  .gm-hap.outline { background:#fff; color:#1C1917; border-color:#E3DCD2; box-shadow:0 1px 2px rgba(45,36,25,.04), 0 3px 8px rgba(45,36,25,.045); }
+  .gm-hap.outline { background:#fff; color:#2A140C; border-color:#E3DCD2; box-shadow:0 1px 2px rgba(45,36,25,.04), 0 3px 8px rgba(45,36,25,.045); }
   .gm-hap.soft { background:#FDECDE; color:#A84D09; }
   .gm-hap.kapali { background:#F6F3EE; color:#6F6459; border-color:#E3DCD2; cursor:not-allowed; box-shadow:none; }
   .gm-hap.sm { min-height:44px; padding:0 18px; font-size:14px; width:auto; }
@@ -95,7 +95,7 @@ export const MOBIL_CSS = `
   .gm-yol i { width:38px; height:38px; border-radius:50%; background:rgba(255,102,0,.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
   .gm-yol b { display:block; font-size:15px; } .gm-yol span { font-size:13px; color:#6F6459; }
   .gm-stat { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:12px; } .gm-stat > div { text-align:center; padding:14px 6px; border-radius:18px; } .gm-stat b { display:block; font-family:'Poppins',sans-serif; font-weight:800; font-size:22px; } .gm-stat span { font-size:12px; color:#6F6459; }
-  .gm-satir { display:flex; align-items:center; gap:13px; min-height:56px; padding:12px 0; border:none; border-bottom:1px solid #E3DCD2; background:none; width:100%; text-align:left; font-family:inherit; font-size:15px; font-weight:600; color:#1C1917; cursor:pointer; }
+  .gm-satir { display:flex; align-items:center; gap:13px; min-height:56px; padding:12px 0; border:none; border-bottom:1px solid #E3DCD2; background:none; width:100%; text-align:left; font-family:inherit; font-size:15px; font-weight:600; color:#2A140C; cursor:pointer; }
   .gm-satir:last-child { border-bottom:none; } .gm-satir i { width:34px; height:34px; border-radius:50%; background:rgba(255,102,0,.08); display:flex; align-items:center; justify-content:center; flex-shrink:0; } .gm-satir em { font-style:normal; font-weight:500; font-size:14px; color:#6F6459; margin-left:auto; }
   /* Detay */
   .gm-hero { height:300px; position:relative; background:#e8e0d8; }

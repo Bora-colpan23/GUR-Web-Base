@@ -77,11 +77,20 @@ export const CATEGORIES = [
 // ═══════════════════════════════════════════════
 
 // Logo: beyaz hap şeklinde arka plan ile her yerde okunur
-export function GurLogo({ size = 48, pill = false }) {
-  const logo = <span className="gur-logo" style={{ fontSize: size, fontWeight: 900, fontFamily: "'Poppins', sans-serif", letterSpacing: -size/24, lineHeight: 1 }}>
-    <span style={{ color: "#FFA500" }}>G</span><span style={{ color: "#FF6600" }}>U</span><span style={{ color: "#FF0000" }}>R</span>
+export function GurLogo({ size = 48, pill = false, ink = "#2A140C" }) {
+  // Küçük harfli geometrik wordmark: "u" bir kase, içinde turuncu nokta (docs/GUR-marka-kimligi.md)
+  const logo = <span className="gur-logo" style={{ display: "inline-flex", lineHeight: 0 }}>
+    <svg viewBox="0 0 204 118" height={size * 0.95} width={size * 0.95 * 204 / 118} role="img" aria-label="gur" style={{ display: 'block' }}>
+      <defs><linearGradient id="gurDot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FF9A1F" /><stop offset="1" stopColor="#FF3D00" /></linearGradient></defs>
+      <g fill="none" stroke={ink} strokeWidth="17" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="36" cy="57" r="25" /><path d="M61 30V84C61 102 51 110 35 110C27 110 21 108 17 104" />
+        <path d="M88 30V62A26 26 0 0 0 140 62M140 30V90" />
+        <path d="M168 30V90M168 58C168 42 178 32 194 32" />
+      </g>
+      <circle cx="114" cy="53" r="11" fill="url(#gurDot)" />
+    </svg>
   </span>;
-  if (pill) return <div style={{ background: "#fff", borderRadius: size * 0.5, padding: `${size*0.12}px ${size*0.35}px`, display: "inline-flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 12px rgba(0,0,0,0.12)" }}>{logo}</div>;
+  if (pill) return <div style={{ background: "#fff", borderRadius: size * 0.5, padding: `${size*0.14}px ${size*0.35}px`, display: "inline-flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 12px rgba(42,20,12,0.12)" }}>{logo}</div>;
   return logo;
 }
 
@@ -432,7 +441,7 @@ function SwipeCard({ r, onSwiped, isTop, onTap, triggerDir, dragOffset, setDragO
         </div>
 
         <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 8, flexWrap: "wrap" }}>
-          <span style={{ background: "#fff", borderRadius: 10, padding: "3px 10px", fontSize: 12, fontWeight: 700, color: "#1C1917", fontFamily: "'Outfit', sans-serif", display: "inline-flex", alignItems: "center", gap: 4 }}>
+          <span style={{ background: "#fff", borderRadius: 10, padding: "3px 10px", fontSize: 12, fontWeight: 700, color: "#2A140C", fontFamily: "'Outfit', sans-serif", display: "inline-flex", alignItems: "center", gap: 4 }}>
             <Icon n="star" color="#F59E0B" size={12} />
             {r.rating}
           </span>
@@ -2468,7 +2477,7 @@ function FavScreen({ onExplore, onSwipe, onDetail, favorites, setFavorites, onPr
 
                   {/* Puan ve kategori */}
                   <div style={{ position: "absolute", top: 12, left: 12, display: "flex", gap: 6 }}>
-                    <span style={{ background: "#fff", borderRadius: 10, padding: "4px 10px", fontSize: 12, fontWeight: 700, color: "#1C1917", fontFamily: "'Outfit', sans-serif", display: "inline-flex", alignItems: "center", gap: 4 }}><Icon n="star" color="#F59E0B" size={11} />{r.rating}</span>
+                    <span style={{ background: "#fff", borderRadius: 10, padding: "4px 10px", fontSize: 12, fontWeight: 700, color: "#2A140C", fontFamily: "'Outfit', sans-serif", display: "inline-flex", alignItems: "center", gap: 4 }}><Icon n="star" color="#F59E0B" size={11} />{r.rating}</span>
                     <span style={{ background: "rgba(255,255,255,0.2)", backdropFilter: "blur(6px)", borderRadius: 10, padding: "4px 10px", fontSize: 11, color: "#fff", fontFamily: "'Outfit', sans-serif", fontWeight: 600 }}>{r.cat}</span>
                   </div>
 
@@ -2584,16 +2593,16 @@ function ProfileScreen({ onBack, onSwipe, onExplore, onFavorites, favorites, onD
                 <Icon n="camera" size={13} color={accentColor} />
               </div>
             </div>
-            <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 19, fontWeight: 800, color: "#1C1917", margin: "14px 0 3px" }}>Bora Çolpan</p>
+            <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 19, fontWeight: 800, color: "#2A140C", margin: "14px 0 3px" }}>Bora Çolpan</p>
             <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 12.5, color: "#A8A29E", margin: "0 0 16px" }}>Nisan 2024'ten beri üye</p>
 
             {/* Tek satır istatistik */}
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E" }}><b style={{ color: "#1C1917" }}>{favorites.length}</b> Favori</span>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E" }}><b style={{ color: "#2A140C" }}>{favorites.length}</b> Favori</span>
               <span style={{ width: 3, height: 3, borderRadius: "50%", background: "#D6D0C4" }} />
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E" }}><b style={{ color: "#1C1917" }}>{reviews.length}</b> Yorum</span>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E" }}><b style={{ color: "#2A140C" }}>{reviews.length}</b> Yorum</span>
               <span style={{ width: 3, height: 3, borderRadius: "50%", background: "#D6D0C4" }} />
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E", display: "flex", alignItems: "center", gap: 3 }}><Icon n="star" size={12} color="#F59E0B" /><b style={{ color: "#1C1917" }}>{avgScore}</b> Ortalama</span>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, color: "#57534E", display: "flex", alignItems: "center", gap: 3 }}><Icon n="star" size={12} color="#F59E0B" /><b style={{ color: "#2A140C" }}>{avgScore}</b> Ortalama</span>
             </div>
           </div>
 
@@ -2622,7 +2631,7 @@ function ProfileScreen({ onBack, onSwipe, onExplore, onFavorites, favorites, onD
               borderBottom: tab === t.id ? "2px solid #FF6600" : "2px solid transparent",
               transition: "all 0.2s",
             }}>
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, fontWeight: tab === t.id ? 700 : 500, color: tab === t.id ? "#1C1917" : "#A8A29E" }}>{t.label}</span>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 13, fontWeight: tab === t.id ? 700 : 500, color: tab === t.id ? "#2A140C" : "#A8A29E" }}>{t.label}</span>
             </div>
           ))}
         </div>
@@ -2640,7 +2649,7 @@ function ProfileScreen({ onBack, onSwipe, onExplore, onFavorites, favorites, onD
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
-                    <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: "#1C1917", margin: 0 }}>{rev.name}</p>
+                    <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: "#2A140C", margin: 0 }}>{rev.name}</p>
                     <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 10, color: "#C4B5A3", flexShrink: 0, marginLeft: 6 }}>{rev.date}</span>
                   </div>
                   <div style={{ display: "flex", gap: 2, margin: "4px 0 6px" }}>
@@ -2666,12 +2675,12 @@ function ProfileScreen({ onBack, onSwipe, onExplore, onFavorites, favorites, onD
                   <Img src={r.imgs[0]} style={{ width: "100%", height: "100%" }} bg="#e8e0d8" />
                 </div>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: "#1C1917", margin: "0 0 2px" }}>{r.name}</p>
+                  <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: 700, color: "#2A140C", margin: "0 0 2px" }}>{r.name}</p>
                   <p style={{ fontFamily: "'Outfit', sans-serif", fontSize: 11.5, color: "#8A7A68", margin: 0 }}>{r.cat} · {r.dist}</p>
                 </div>
                 <span style={{ display: "flex", alignItems: "center", gap: 3 }}>
                   <Icon n="star" color="#F59E0B" size={12} />
-                  <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 12, fontWeight: 700, color: "#1C1917" }}>{r.rating}</span>
+                  <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 12, fontWeight: 700, color: "#2A140C" }}>{r.rating}</span>
                 </span>
               </div>
             ))

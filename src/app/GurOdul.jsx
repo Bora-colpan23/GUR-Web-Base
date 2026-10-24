@@ -58,7 +58,7 @@ export function OdulluReklam({ onBitir, onKapat }) {
   const { r } = reklam;
   return (
     <div className="ga-modal" role="dialog" aria-modal="true" aria-label="Ödüllü reklam" style={{ background: 'rgba(10,8,6,.92)' }}>
-      <div style={{ width: '100%', maxWidth: 420, background: '#1C1917', borderRadius: 24, overflow: 'hidden', color: '#fff' }}>
+      <div style={{ width: '100%', maxWidth: 420, background: '#2A140C', borderRadius: 24, overflow: 'hidden', color: '#fff' }}>
         <div style={{ position: 'relative', height: 260, background: '#2c1810' }}>
           {r && <Img src={r.imgs?.[0]} style={{ width: '100%', height: '100%' }} bg="#2c1810" />}
           <span className="ga-perde" style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,.8), transparent 60%)' }} />

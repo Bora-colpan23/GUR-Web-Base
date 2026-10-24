@@ -89,13 +89,17 @@ const CHEFS = [
 ];
 
 // ─── GUR Logo ───
-function GurLogo({ size = 28 }) {
+function GurLogo({ size = 28, ink = '#fff' }) {
   return (
-    <span style={{ fontSize: size, fontWeight: 900, fontFamily: F, letterSpacing: -size / 22, lineHeight: 1 }}>
-      <span style={{ color: '#FFA500' }}>G</span>
-      <span style={{ color: '#FF6600' }}>U</span>
-      <span style={{ color: '#FF3B30' }}>R</span>
-    </span>
+    <svg viewBox="0 0 204 118" height={size * 0.95} width={size * 0.95 * 204 / 118} role="img" aria-label="gur" style={{ display: 'block' }}>
+      <defs><linearGradient id="gurDot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FF9A1F" /><stop offset="1" stopColor="#FF3D00" /></linearGradient></defs>
+      <g fill="none" stroke={ink} strokeWidth="17" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="36" cy="57" r="25" /><path d="M61 30V84C61 102 51 110 35 110C27 110 21 108 17 104" />
+        <path d="M88 30V62A26 26 0 0 0 140 62M140 30V90" />
+        <path d="M168 30V90M168 58C168 42 178 32 194 32" />
+      </g>
+      <circle cx="114" cy="53" r="11" fill="url(#gurDot)" />
+    </svg>
   );
 }
 
